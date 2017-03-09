@@ -1,0 +1,4 @@
+tinyxml/
+*.lib
+*.h
+*.nupkg
