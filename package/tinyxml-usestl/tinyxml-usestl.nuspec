@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <tags>tinyxml-usestl admin SPACE_SEPARATED</tags>
     <summary>TinyXML with STL support packaged as a static library with CMake package support.</summary>
     <description>
-    TinyXML built with Visual Studio 2015, with STL support and CMake package data.
+    TinyXML built for 64-bit Windows with Visual Studio 2015, with STL support and CMake package data.
     This package will add the `TinyXML` package to your system CMake package registry.
     For details on the CMake packaging used inspect the Chocolatey install scripts in
     `%ChocolateyInstall%\lib\tinyxml-usestl\tools` and refer to [cmake-packages(7)](https://cmake.org/cmake/help/v3.0/manual/cmake-packages.7.html).
