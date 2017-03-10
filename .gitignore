@@ -1,4 +1,5 @@
 tinyxml/
 *.lib
+*.pdb
 *.h
 *.nupkg
