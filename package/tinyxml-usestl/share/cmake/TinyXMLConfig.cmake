@@ -1,4 +1,5 @@
-set ( _PREFIX "$ENV{ChocolateyInstall}/lib/tinyxml-usestl")
-set (TinyXML_ROOT_DIR "${_PREFIX}")
+get_filename_component(_PREFIX "${CMAKE_CURRENT_LIST_DIR}/../.." ABSOLUTE)
 set (TinyXML_INCLUDE_DIRS "${_PREFIX}/include")
+set (TinyXML_INCLUDE_DIR "${TinyXML_INCLUDE_DIRS}")
 set (TinyXML_LIBRARIES debug "${_PREFIX}/lib/tinyxmld.lib" optimized "${_PREFIX}/lib/tinyxml.lib")
+set (TinyXML_LIBRARY "${TinyXML_LIBRARIES}")
