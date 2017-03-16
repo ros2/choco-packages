@@ -1,3 +1,3 @@
 $CMakeRegistryPath = "HKCU:\SOFTWARE\Kitware\CMake"
 $CMakeSystemRepositoryPath = "HKLM:\SOFTWARE\Kitware\CMake\Packages"
-$CMakePackageName = "Eigen"
+$CMakePackageName = "Eigen3"
