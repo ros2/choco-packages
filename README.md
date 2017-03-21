@@ -5,11 +5,15 @@ Currently [TinyXML] and [Eigen 3].
 
 ## Installing packages
 
-These packages can be installed by specifying the full url to the latest package version published to this repository.
+You'll need Chocolatey installed. They have an [installation guide](https://chocolatey.org/docs/installation) that you can follow.
+Chocolatey recently announced a Pro version.
+The pro version is not necessary to install the packages created here.
+
+These packages can be installed by downloading the desired packages and specifying the path to the package with choco install.
 
 From a Windows command prompt or PowerShell console with Administrator privileges:
 ```
-choco install https://github.com/ros2/choco-packages/releases/download/latest/eigen-3.3.3.nupkg
+choco install Downloads\eigen-3.3.3.nupkg
 ```
 
 ## Building packages
