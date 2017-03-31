@@ -1,5 +1,10 @@
 get_filename_component(_PREFIX "${CMAKE_CURRENT_LIST_DIR}/../.." ABSOLUTE)
 set (TinyXML2_INCLUDE_DIRS "${_PREFIX}/include")
-set (TinyXML2_INCLUDE_DIR "${TinyXML2_INCLUDE_DIRS}")
 set (TinyXML2_LIBRARIES debug "${_PREFIX}/lib/tinyxml2d.lib" optimized "${_PREFIX}/lib/tinyxml2.lib")
+
+set (TinyXML2_INCLUDE_DIR "${TinyXML2_INCLUDE_DIRS}")
+set (TINYXML2_INCLUDE_DIRS "${TinyXML2_INCLUDE_DIRS}")
+set (TINYXML2_INCLUDE_DIR "${TinyXML2_INCLUDE_DIRS}")
 set (TinyXML2_LIBRARY "${TinyXML2_LIBRARIES}")
+set (TINYXML2_LIBRARIES "${TinyXML2_LIBRARIES}")
+set (TINYXML2_LIBRARY "${TinyXML2_LIBRARIES}")
