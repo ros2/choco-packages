@@ -8,3 +8,6 @@ if (Test-Path $CMakeRegistryPath) {
       Remove-Item "$CMakeSystemRepositoryPath\$CMakePackageName"
   }
 }
+
+# Removal of the dynamic library from the system Path
+# is handled automagically by the use of Install-ChocolateyPath.
