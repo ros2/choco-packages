@@ -9,7 +9,7 @@
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>1.10.6</version>
+    <version>1.12.1</version>
      <packageSourceUrl>https://github.com/ros2/choco-packages/tree/latest/package/asio</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Steven! Ragnarök</owners>
@@ -19,7 +19,7 @@
     <!-- This section is about the software itself -->
     <title>asio</title>
     <authors>Christopher M. Kohlhoff</authors>
-    <copyright>2003-2014 Christopher M. Kohlhoff</copyright>
+    <copyright>2003-2018 Christopher M. Kohlhoff</copyright>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://think-async.com</projectUrl>
     <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/eigen.png</iconUrl>-->
