@@ -1,0 +1,10 @@
+get_filename_component(_PREFIX "${CMAKE_CURRENT_LIST_DIR}/../.." ABSOLUTE)
+set (Log4cxx_INCLUDE_DIRS "${_PREFIX}/include")
+set (Log4cxx_LIBRARIES debug "${_PREFIX}/lib/log4cxxd.lib" optimized "${_PREFIX}/lib/log4cxx.lib")
+
+set (Log4cxx_INCLUDE_DIR "${Log4cxx_INCLUDE_DIRS}")
+set (LOG4CXX_INCLUDE_DIRS "${Log4cxx_INCLUDE_DIRS}")
+set (LOG4CXX_INCLUDE_DIR "${Log4cxx_INCLUDE_DIRS}")
+set (Log4cxx_LIBRARY "${Log4cxx_LIBRARIES}")
+set (LOG4CXX_LIBRARIES "${Log4cxx_LIBRARIES}")
+set (LOG4CXX_LIBRARY "${Log4cxx_LIBRARIES}")
