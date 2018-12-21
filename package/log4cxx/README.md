@@ -75,50 +75,50 @@ Then do the following
 
 #### open log4cxx.dsw
 
-![](01-log4cxx.png)
+![](image/01-log4cxx.png)
 
 Double-click `log4cxx.dsw` to open the project in VisualStudio.
 
-![](02-oneway_upgrade.png)
-![](04-VSready.png)
+![](image/02-oneway_upgrade.png)
+![](image/04-VSready.png)
 
 
 #### set the right platform
 
 Right-click solution, then click "Configuration Manager..."
 
-![](05-ConfigurationManager.png)
+![](image/05-ConfigurationManager.png)
 
 The following is a demo of using x64 instead of x86. Your use case may differ.
 
-![](07-ConfigurationManager1.png)
-![](13-ConfigurationManager7.png)
+![](image/07-ConfigurationManager1.png)
+![](image/13-ConfigurationManager7.png)
 
 #### retarget solution
 
 Right-click solution, then click "Retarget solution..."
 
-![](15-RetargetSolution.png)
+![](image/15-RetargetSolution.png)
 
-![](16-RetargetProjects.png)
+![](image/16-RetargetProjects.png)
 
 Select the correct `Windows SDK Version` and click `OK`.
 
-![](17-RetargetProjects_DONE.png)
+![](image/17-RetargetProjects_DONE.png)
 
 #### additional lib
 
 To fix a potential build issue, add `rpcrt4.lib` as `Additional Dependency`.
 
-![](18-log4cxx_Properties.png)
-![](20-AdditionalDeps_rpcrt4.lib.png)
+![](image/18-log4cxx_Properties.png)
+![](image/20-AdditionalDeps_rpcrt4.lib.png)
 
 #### build
 
 Right-click log4cxx, then click build
 
-![](22-log4cxx_Build.png)
-![](28-log4cxx_Build_DONE.png)
+![](image/22-log4cxx_Build.png)
+![](image/28-log4cxx_Build_DONE.png)
 
 ### create nupack
 
