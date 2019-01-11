@@ -1,0 +1,21 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded software have been downloaded from the listed download
+location on <https://slproweb.com/products/Win32OpenSSL.html>
+and can be verified by doing the following:
+
+1. Download the following:
+  32-Bit software: <https://slproweb.com/download/Win32OpenSSL-1_0_2q.exe>
+  64-Bit software: <https://slproweb.com/download/Win64OpenSSL-1_0_2q.exe>
+2. Get the checksum using one of the following methods:
+  - Using powershell function 'Get-FileHash'
+  - Use chocolatey utility 'checksum.exe'
+3. The checksums should match the following:
+
+  checksum type: sha256
+  checksum32: D6B5C46EF7410B0C397F25D55CFD7BB4A5BC040308274041A55F917D9F091305
+  checksum64: AA661CFEF57F84808E77545A83F61DCC1AB98140BCADFF102682435FE0B00763
+
+The file 'LICENSE.txt' has been obtained from <https://www.openssl.org/source/license.txt>
