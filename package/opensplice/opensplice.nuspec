@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>OpenSplice</id>
+    <version>6.9.181127</version>
+    <packageSourceUrl>https://github.com/ros2/choco-packages/tree/latest/package/opensplice</packageSourceUrl>
+    <owners>AWS RoboMaker</owners>
+    <title>Vortex OpenSplice</title>
+    <authors>ADLINK Technology Limited</authors>
+    <projectUrl>http://ist.adlinktech.com/vortex/vortex-opensplice</projectUrl>
+    <copyright>Ⓒ 2006-2018 ADLINK Technology Limited</copyright>
+    <licenseUrl>https://github.com/ADLINK-IST/opensplice/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>opensplice</tags>
+    <summary>Vortex OpenSplice is an implementation of the OMG DDS standard</summary>
+    <description><![CDATA[
+Vortex OpenSplice is the most advanced, complete and widely used (Commercial and
+Open Source) implementation of the Object Management Group's Data Distribution
+Service (OMG DDS) standard.
+
+Vortex OpenSplice enables data to be shared and integrated across a wide
+spectrum of operating systems and platforms. It provides a full implementation
+of both the OMG DDS latest rev1.4 (DCPS profiles) and the OMG-DDSI / RTPS v2.2
+interoperable wire-protocol standards. It is targeted for use with server-class
+(desktops, racks etc.) platforms as well as more specialized real-time embedded
+environments and operating systems (e.g. single board computer running VxWorks).
+
+The DDS API standard guarantees source code portability across different vendor
+implementations, while the DDSI standard ensures on the wire interoperability
+across DDS implementations from different vendors.
+]]></description>
+    <dependencies>
+      <dependency id="chocolatey" version="0.10.5" />
+      <dependency id="chocolatey-core.extension" version="1.3.3" />
+      <dependency id="vcredist140" version="14.12.25810" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

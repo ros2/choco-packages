@@ -3,5 +3,6 @@
 *.dll
 *.h
 *.nupkg
+*.zip
 tinyxml2-4.0.1/
 asio-1.10.6/
