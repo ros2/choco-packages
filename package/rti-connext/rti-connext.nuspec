@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rti-connext</id>
+    <version>5.3.1</version>
+    <packageSourceUrl>https://github.com/ros2/choco-packages/tree/latest/package/rti-connext</packageSourceUrl>
+    <owners>AWS RoboMaker</owners>
+    <title>RTI Connext</title>
+    <authors>Real-Time Innovations Inc.</authors>
+    <projectUrl>https://www.rti.com/free-trial/open-source-projects</projectUrl>
+    <copyright>Real-Time Innovations Inc.</copyright>
+    <licenseUrl>https://info.rti.com/hubfs/licenses/RTI_OpenCommunitySourceLicense_4032_Rev06-16.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>connext</tags>
+    <summary>RTI Connext DDS Implementation</summary>
+    <description><![CDATA[
+RTI provides the intelligent connectivity framework designed for the Industrial IoT.
+RTI Connext DDS delivers the edge-to-cloud connectivity software needed to streamline,
+control and monitor the most demanding IIoT systems.
+]]></description>
+    <dependencies>
+      <dependency id="chocolatey" version="0.10.5" />
+      <dependency id="chocolatey-core.extension" version="1.3.3" />
+      <dependency id="vcredist140" version="14.12.25810" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
