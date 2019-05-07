@@ -1,0 +1,30 @@
+ROS2 Choco Packages
+Copyright (c) 2017, Open Source Robotics Foundation, Inc.
+
+This product vendors asio, which is available under a Boost Software License.
+For details, see package/asio/tools/LICENSE.txt
+
+This product vendors eigen, which is available under a Mozilla Public License.
+For details, see package/eigen/tools/LICENSE.txt
+
+This product vendors log4cxx, which is available under an Apache License.
+For details, see package/log4cxx/tools/LICENSE.txt
+
+This product vendors opensplice, which is available under a Software License
+Agreement. For details, see package/opensplice/legal/LICENSE.txt
+
+This product vendors openssl, which is available under an OpenSSL and a SSLeay
+License. For details, see package/openssl/legal/LICENSE.txt
+
+This product vendors qt-sdk, which is available under a GNU Lesser General
+Public License. For details, see package/qt-sdk/legal/LICENSE.txt
+
+This product vendors rti-connext, which is available under an Open Community
+Source License. For details, see
+package/rti-connext/legal/RTI_OpenCommunitySourceLicense_4032_Rev06-16.pdf
+
+This product vendors tinyxml-usestl, which is available under a Mozilla Public
+License. For details, see package/tinyxml-usestl/tools/tools/LICENSE.txt
+
+This product vendors tinyxml2, which is available under a zlib License. For
+details, see package/tinyxml2/tools/LICENSE.txt
