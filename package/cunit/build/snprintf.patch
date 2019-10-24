@@ -1,0 +1,13 @@
+--- source_subfolder/CUnit/Headers/CUnit.h.in	2014-04-24 02:54:45.000000000 +0200
++++ source_subfolder/CUnit/Headers/CUnit.h.in.patched	2018-06-22 18:21:11.755600964 +0200
+@@ -102,7 +102,9 @@
+ #    define CU_EXPORT
+ #  endif
+ #  ifdef _MSC_VER
+-#    define snprintf _snprintf
++#    if _MSC_VER < 1900
++#      define snprintf _snprintf
++#    endif
+ #  endif
+ #else
+ #  define CU_EXPORT
