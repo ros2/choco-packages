@@ -6,13 +6,30 @@ tutorial application which requires it.
 
 To build the package, follow these steps.
 
-You need Git, Visual Studio 2017 Command line tools, CMake, Chocolatey, and a text editor.
+You need Git, Visual Studio 2019 Command line tools, CMake, Chocolatey, and a text editor.
 
-- Clone or download https://github.com/bulletphysics/bullet3
-- Create a CMake build directory and run `cmake -G "Visual Studio 15 2017 Win64" PATH_TO_BULLET_SOURCE -DBUILD_SHARED_LIBS=ON -DUSE_DOUBLE_PRECISION=ON -DBUILD_CPU_DEMOS=OFF -DBUILD_BULLET2_DEMOS=OFF -DBUILD_OPENGL3_DEMOS=OFF -DBUILD_UNIT_TESTS=OFF -DBUILD_EXTRAS=OFF`.
-- Run `msbuild ALL_BUILD.sln /p:Configuration=Release`
-- Copy `Bullet*.lib` and `Bullet*.dll` located under `lib/Release` files to the package `lib/` directory.
-- Run `msbuild ALL_BUILD.sln /p:Configuration=Debug`
-- Copy `Bullet*_Debug.lib`, `Bullet*_Debug.dll` and `Bullet*_Debug.pdb` located under `lib/Debug` files to the package `lib/` directory.
-- Run `choco pack`.
-- Test the package and if it's good upload it somewhere your end users can reach it.
+Building bullet from source on windows is difficult.
+The vcpkg team has already done it, so run these commands to get vcpkg and make it build bullet.
+
+```
+git clone https://github.com/Microsoft/vcpkg.git --depth 1 -b 2022.02.23
+cd vcpkg
+call bootstrap-vcpkg.bat
+vcpkg install bullet3
+```
+
+Copy all files from these directories to the directories of the same name in this repository `packages/bullet`.
+
+* `vcpkg\packages\bullet3_x86-windows\debug`
+* `vcpkg\packages\bullet3_x86-windows\include`
+* `vcpkg\packages\bullet3_x86-windows\lib`
+* `vcpkg\packages\bullet3_x86-windows\share`
+
+Make the chocolately package
+
+```
+choco pack
+```
+
+There should now be a file called `bullet.3.17.nupkg` in the same directory.
+Test the package and if it's good upload it somewhere your end users can reach it.
